@@ -49,13 +49,14 @@ body{
 }
 
 header{
-  background-color: transparent;
-  position: fixed;
+  
 }
 
 .header{
   height: 85px;
   position: relative;
+  background-color: transparent;
+  position: fixed;
 }
 
 .logo-link{

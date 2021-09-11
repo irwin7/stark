@@ -102,22 +102,25 @@ nav{
 
 .nav-link::before{
   content: "";
-  width: 0;
+  width: inherit;
   height: 2px;
   background-color: #d88f0f;
   display: inline-block;
   position: absolute;
   bottom: 35px;
+  top: inherit;
   left: 0;
   right: 0;
   bottom: -10px;
-  margin: 0 auto;
-  transition: all 1s ease;
+  margin: auto;
+  transition: all 0.4s;
   opacity: 1;
+  filter: alpha(opacity=100);
+  transform: scale(0);
 }
 
 .nav-item:hover .nav-link::before{
-  width: inherit;
+  transform: scale(1);
 }
 
 .nav-link{
@@ -269,5 +272,5 @@ nav{
   text-transform: none;
   color: #222;
   font-family: var(--barlow);
-
+  
 }

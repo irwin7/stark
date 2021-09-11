@@ -94,19 +94,56 @@
         <div class="discover">
           <ul class="discover-list row">
             <li class="discover-item">
-              <p class="discover-text1">LIMITED OFFERS</p>
-              <p class="discover-text2">Minimal <br> Clock</p>
-              <a href="#" class="discover-link">Discover Now</a>
+              <a href="#">
+                <div class="discover-bg"></div>
+                <div class="discover-texts">
+                <p class="discover-text1">LIMITED OFFERS</p>
+                <p class="discover-text2">Minimal <br> Clock</p>
+                <a href="#" class="discover-link">Discover Now</a>
+              </div>
+              </a>
+            </li>
+
+            <li class="discover-item">
+              <a href="#">
+                <div class="discover-bg"></div>
+                <div class="discover-texts">
+                  <p class="discover-text1">SALE OFF 20%</p>
+                  <p class="discover-text2">Orange  <br> Chair</p>
+                  <a href="#" class="discover-link">Discover Now</a>
+                </div>
+              </a>
+            </li>
+
+            <li class="discover-item">
+              <a href="#">
+                <div class="discover-bg"></div>
+                <div class="discover-texts">
+                  <p class="discover-text1">CHOOSE FOR YOU</p>
+                  <p class="discover-text2">Hanging <br> Light</p>
+                  <a href="#" class="discover-link">Discover Now</a>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </section>
+
+
   </main>
 
   <footer>
 
   </footer>
+
+
+  <script>
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector('.header');
+      header.classList.toggle("header-bg", window.scrollY > 0)
+    })
+  </script>
 
 </body>
 

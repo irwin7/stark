@@ -45,7 +45,10 @@ body{
   background-size: cover;
   height: 700px;
   background-repeat: no-repeat;
-  /* width: 100%; */
+}
+
+.header-bg{
+  background-color: #000000cc;
 }
 
 .header{
@@ -54,7 +57,7 @@ body{
   background-color: transparent;
   position: fixed;
   width: 100%;
-  padding: 0 10px;
+  padding: 30px 10px;
 }
 
 .logo-link{
@@ -162,7 +165,7 @@ nav{
   width: 500px;
   margin: 0 auto;
   overflow: hidden;
-  top: 120px;
+  top: 220px;
   height: 170px;
 }
 
@@ -253,8 +256,34 @@ nav{
 }
 
 .discover-item{
-  width: 454px;
+  width: 449px;
   height: 284px;
+  position: relative;
+  overflow: hidden;
+}
+
+.discover-bg{
+  position: absolute;
+  background-image: url('../media/img/home3-banner1.jpg');
+  background-size: contain;
+  width: 449px;
+  height: 284px;
+  transition: all 1s ease;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.discover-item:nth-child(2) .discover-bg{
+  background-image: url('../media/img/home3-banner2.jpg');
+}
+
+.discover-item:nth-child(3) .discover-bg{
+  background-image: url('../media/img/home3-banner3.jpg');
+}
+
+.discover-item:hover .discover-bg{
+  transform: scale(1.08);
 }
 
 .discover-text1{
@@ -268,9 +297,29 @@ nav{
 .discover-text2{
   font-size: 40px;
   font-weight: 500;
-  font-size: 60px;
   text-transform: none;
   color: #222;
   font-family: var(--barlow);
-  
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.discover-link{
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--barlow);
+  letter-spacing: 1px;
+  color: #222;
+  cursor: pointer;
+  line-height: 1.25;
+  border-bottom: 3px solid #d88f0f;
+  padding-bottom: 3px;
+}
+
+.discover-texts{
+  position: relative;
+  z-index: 3;
+  width: 107px;
+  margin-top: 65px;
+  margin-left: 50px;
 }

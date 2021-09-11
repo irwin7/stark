@@ -271,4 +271,5 @@ nav{
   font-size: 60px;
   text-transform: none;
   color: #222;
+  font-family: var(--barlow);
 }

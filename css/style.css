@@ -46,6 +46,7 @@ body{
   background-size: cover;
   height: 700px;
   background-repeat: no-repeat;
+  /* width: 100%; */
 }
 
 header{
@@ -57,6 +58,7 @@ header{
   position: relative;
   background-color: transparent;
   position: fixed;
+  width: 100%;
 }
 
 .logo-link{
@@ -75,7 +77,6 @@ nav{
   width: 500px;
   margin: 0 auto;
   position: relative;
-  left: 50%;
 }
 
 .nav-list{
@@ -135,7 +136,6 @@ nav{
 
 .header-icons{
   position: relative;
-  left: 90%;
 }
 
 .icons-list{

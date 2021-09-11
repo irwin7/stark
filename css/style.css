@@ -94,7 +94,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;overflow: hidden;
+  position: relative;
 }
 
 .hero-texts{
@@ -104,11 +104,10 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  
 }
 
 .hero-text1{
-  position: absolute;
+  position: relative;
   top: 120px;
   width: 122px;
   left: -32px;
@@ -118,7 +117,7 @@ body{
   line-height: 17px;
   font-weight: 400;
   color: #fff;
-  animation: 0.9s text1 alternate 1 ease-in;
+  animation: 0.5s text1 alternate 1 ease-in;
 }
 
 @keyframes text1{
@@ -131,22 +130,23 @@ body{
 }
 
 .hero-text2{
-  position: absolute;
+  position: relative;
   top: 150px;
   left: -230px;
   width: 500px;
-  animation: 0.9s text2 alternate 1 ease-in;
+  animation: 0.5s text2 alternate 1 ease-in;
   font-family: var(--trebuchet);
   font-size: 68px;
   line-height: 71px;
   font-weight: 600;
   color: #fff;
   text-transform: capitalize;
+  overflow: hidden;
 }
 
 @keyframes text2{
   0%{
-    left: 0;
+    left: -460px;
   }
   100%{
     left: -230px;
@@ -156,4 +156,15 @@ body{
 .hero-btn{
   position: absolute;
   display: inline-block;
+}
+
+.hero-div1{
+  position: relative;
+}
+.hero-div2{
+  position: relative;
+  overflow: hidden;
+}
+.hero-div3{
+  position: relative;
 }

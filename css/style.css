@@ -408,7 +408,7 @@ nav{
   transition: background-image 0.4s ease;
 }
 
-.product-item-bg:hover{
+.product-item:hover{
   background-image: url("../media/img/img1-hover.jpg");
 }
 
@@ -416,7 +416,7 @@ nav{
   background-image: url('../media/img/img2.jpg');
 }
 
-.product-item:nth-child(2) .product-item-bg:hover{
+.product-item:nth-child(2) .product-item:hover{
   background-image: url("../media/img/img2-hover.jpg");
 }
 
@@ -424,7 +424,7 @@ nav{
   background-image: url('../media/img/img3.jpg');
 }
 
-.product-item:nth-child(3) .product-item-bg:hover{
+.product-item:nth-child(3) .product-item:hover{
   background-image: url("../media/img/img3-hover.jpg");
 }
 
@@ -432,7 +432,7 @@ nav{
   background-image: url('../media/img/img4.jpg');
 }
 
-.product-item:nth-child(4) .product-item-bg:hover{
+.product-item:nth-child(4) .product-item:hover{
   background-image: url("../media/img/img4-hover.jpg");
 }
 
@@ -440,7 +440,7 @@ nav{
   background-image: url('../media/img/img5.jpg');
 }
 
-.product-item:nth-child(5) .product-item-bg:hover{
+.product-item:nth-child(5) .product-item:hover{
   background-image: url("../media/img/img5-hover.jpg");
 }
 
@@ -448,7 +448,7 @@ nav{
   background-image: url('../media/img/img6.jpg');
 }
 
-.product-item:nth-child(6) .product-item-bg:hover{
+.product-item:nth-child(6) .product-item:hover{
   background-image: url("../media/img/img6-hover.jpg");
 }
 
@@ -456,7 +456,7 @@ nav{
   background-image: url('../media/img/img7.jpg');
 }
 
-.product-item:nth-child(7) .product-item-bg:hover{
+.product-item:nth-child(7) .product-item:hover{
   background-image: url("../media/img/img7-hover.jpg");
 }
 
@@ -464,7 +464,7 @@ nav{
   background-image: url('../media/img/img8.jpg');
 }
 
-.product-item:nth-child(8) .product-item-bg:hover{
+.product-item:nth-child(8) .product-item:hover{
   background-image: url("../media/img/img8-hover.jpg");
 }
 
@@ -472,7 +472,7 @@ nav{
   background-image: url('../media/img/img9.jpg');
 }
 
-.product-item:nth-child(9) .product-item-bg:hover{
+.product-item:nth-child(9) .product-item:hover{
   background-image: url("../media/img/img9-hover.jpg");
 }
 
@@ -480,7 +480,7 @@ nav{
   background-image: url('../media/img/img10.jpg');
 }
 
-.product-item:nth-child(10) .product-item-bg:hover{
+.product-item:nth-child(10) .product-item:hover{
   background-image: url("../media/img/img10-hover.jpg");
 }
 

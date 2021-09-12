@@ -410,6 +410,7 @@ nav{
 
 .product-item:hover{
   background-image: url("../media/img/img1-hover.jpg");
+  height: 288.2px;
 }
 
 .product-item:nth-child(2) .product-item-bg{

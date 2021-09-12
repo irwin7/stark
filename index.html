@@ -92,7 +92,7 @@
     <section id="discover">
       <div class="container">
         <div class="discover">
-          <ul class="discover-list row">
+          <ul class="discover-list row center">
             <li class="discover-item">
               <a href="#">
                 <div class="discover-bg"></div>
@@ -130,6 +130,32 @@
       </div>
     </section>
 
+    <section id="products">
+      <div class="container">
+        <div class="products">
+          <div class="product-titles">
+            <ul class="product-list1 row center">
+
+              <li class="product-item1 ">
+                <a href="#" class="product-link1 product-active">Furniture</a>
+              </li>
+
+              <li class="product-item1">
+                <a href="#" class="product-link1">Dinning</a>
+              </li>
+
+              <li class="product-item1">
+                <a href="#" class="product-link1">Lighting</a>
+              </li>
+
+            </ul>
+          </div>
+
+          .product-
+        </div>
+      </div>
+    </section>
+
 
   </main>
 
@@ -139,8 +165,9 @@
 
 
   <script>
+    var header = document.querySelector('.header');
     window.addEventListener("scroll", function(){
-      var header = document.querySelector('.header');
+      
       header.classList.toggle("header-bg", window.scrollY > 0)
     })
   </script>

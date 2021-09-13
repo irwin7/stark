@@ -45,8 +45,45 @@ body{
 #hero{
   background-image: url('../media/img/home4-slide1.jpg');
   background-size: cover;
-  height: 700px;
+  height: 100vh;
   background-repeat: no-repeat;
+}
+
+.hero-arrow{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  background-image: url('../media/icon/arrow.svg');
+  transform: rotate(180deg);
+  background-position: top 5px left 5px;
+  background-repeat: no-repeat;
+  top: 50%;
+  right: 10px;
+  z-index: 6;
+  visibility: hidden;
+  transition: visibility 0.4s ease;
+  transition: background-color 0.4s ease;
+  border: none;
+}
+
+.arrow1{
+  top: 50%;
+  left: 10px;
+  transform: rotate(0);
+}
+
+.hero-arrow:hover{
+  background-color: #000;
+}
+
+#hero:hover .hero-arrow{
+  visibility: visible;
+}
+
+#hero::before:hover{
+  background-color: rgba(0, 0, 0,1);
 }
 
 .header{
@@ -262,13 +299,10 @@ nav{
 
 .discover-list{
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(1,284px);
 }
 
 .discover-item{
-  width: 100%;
+  width: fit-content;
   height: 284px;
   position: relative;
   overflow: hidden;
@@ -304,6 +338,7 @@ nav{
   font-weight: 600;
   margin-bottom: 5px;
   color: #888;
+  display: inline-block;
 }
 
 .discover-text2{
@@ -314,6 +349,7 @@ nav{
   font-family: var(--barlow);
   margin-top: 10px;
   margin-bottom: 25px;
+  display: inline-block;
 }
 
 .discover-link{
@@ -326,14 +362,18 @@ nav{
   line-height: 1.25;
   border-bottom: 3px solid #d88f0f;
   padding-bottom: 3px;
+  width: 100px;
 }
 
 .discover-texts{
   position: relative;
   z-index: 3;
-  width: 107px;
-  margin-top: 65px;
-  margin-left: 50px;
+  /* width: 107px; */
+  margin-top: 65px; 
+  margin-left: 50px; 
+  display: flex;
+  flex-direction: column;
+  width: 399px;
 }
 
 /* #products .container{
@@ -388,14 +428,11 @@ nav{
 }
 
 .product-list{
-  padding: 30px 23px;
+  padding: 30px 0px;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, 242.2px);
-  grid-template-rows: repeat(2, 402.2px);
-  grid-gap: 15px;
-  grid-column-gap: 23px;
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .product-item{

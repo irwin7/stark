@@ -260,8 +260,15 @@ nav{
   overflow: hidden;
 }
 
+.discover-list{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(1,284px);
+}
+
 .discover-item{
-  width: 33.3%;
+  width: 100%;
   height: 284px;
   position: relative;
   overflow: hidden;
